@@ -23,4 +23,5 @@ choosen=$( find $HOME/Pictures -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' 
 # Check if selected image is not empty
 [[ -s $choosen ]] && set_bg $choosen
 
-
+# Restart xwallpaper
+xwallpaper --center ~/.config/backgrounds/wallpaper.jpg
