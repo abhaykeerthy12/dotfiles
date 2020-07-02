@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# A powermenu in dmenu
+choosen=$( echo -e "Cancel\nLock\nReboot\nShutdown" | dmenu -i -fn 'Fira Mono Medium' -nb '#282A36' -nf '#E6E6E6' -sb '#E6E6E6' -sf '#282A36' )
+
+# Check entered value
+case $choosen in
+	"Lock")
+		i3lock -i $HOME/.config/backgrounds/lock.png
+		;;
+	"Reboot")
+		prompt "Are you sure ? " "reboot"
+		;;
+	"Shutdown")
+		prompt "Are you sure ? " "shutdown now"
+		;;
+esac

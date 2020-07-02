@@ -1,0 +1,26 @@
+#!/bin/bash
+
+
+# Function to set wallpaper ( its on top of code because bash needs functions on top )
+set_bg() {
+
+	# Ask for a preview 
+	prompt "Preview image ? " "sxiv $1"
+	
+	# Ask to set image as wallpaper
+	prompt "Set as wallpaper ? " "convert $1 -resize 1366 $HOME/.config/backgrounds/wallpaper.jpg" && notify-send "Changing Wallpaper..."
+
+	# Ask to set image as lockscreen
+	prompt "Set as lockscreen ? " "convert $1 -resize 1366 $HOME/.config/backgrounds/lock.png" && notify-send "Changing Lockscreen..."
+
+}
+
+
+# Find all images in 'Pictures' folder and pass it to dmenu
+choosen=$( find $HOME/Pictures -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' | dmenu -i -l 10 -fn 'Fira Mono Medium' -nb '#282A36' -nf '#E6E6E6' -sb '#E6E6E6' -sf '#282A36' )
+
+
+# Check if selected image is not empty
+[[ -s $choosen ]] && set_bg $choosen
+
+

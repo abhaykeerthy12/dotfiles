@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# A quick settings in dmenu
+choosen=$( echo -e "Cancel\nChange Wallpaper\nChange Theme\nNetwork Manager\nVolume Manager\nPower Menu" | dmenu -i -l 10 -fn 'Fira Mono Medium' -nb '#282A36' -nf '#E6E6E6' -sb '#E6E6E6' -sf '#282A36' )
+
+# Check entered value
+case $choosen in
+        "Change Wallpaper")
+                set-bg
+                ;;
+	"Change Theme")
+                lxappearance
+                ;;
+	"Network Manager")
+                alacritty --class Floater -e nmtui
+                ;;
+	"Volume Manager")
+                alacritty --class Floater -e alsamixer
+                ;;
+        "Power Menu")
+                power-menu
+                ;;
+esac

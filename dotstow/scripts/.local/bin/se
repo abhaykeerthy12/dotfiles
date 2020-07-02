@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Search and edit a file
+find . -type f | fzf | xargs -r $EDITOR

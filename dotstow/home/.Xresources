@@ -1,0 +1,94 @@
+!!!! Xresources => https://www.github.com/abhaykeerthy12/dotfiles
+
+
+
+!!! Fix fonts
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+Xft.dpi: 96
+
+
+
+!!! Dracula color scheme 
+
+
+!! Dark (dark grayish)
+*.background: #282A36
+
+
+!! Light (light grayish)
+*.foreground: #F8F8F2
+
+
+!! Black
+*.color0:     #000000
+
+
+!! Red
+
+! Light red
+*.color9:     #FF6E67
+
+! Medium red
+*.color1:     #FF5555
+
+
+!! Green
+
+! Light green
+*.color2:     #50FA7B
+
+! medium green
+*.color10:    #5af78e
+
+
+!! Yellow
+
+! Light yellow
+*.color3:     #F1FA8C
+
+! Medium yellow
+*.color11:    #F4F99D
+
+
+!! Violet
+
+! Light violet
+*.color12:    #CAA9FA
+
+! Medium violet
+*.color4:     #BD93F9
+
+
+!! Pink
+
+! Light pink
+*.color13:    #FF92D0
+
+! Medium pink
+*.color5:     #FF79C6
+
+
+!! Blue
+
+! Light blue
+*.color14:    #9AEDFE
+
+! Medium blue
+*.color6:     #8BE9FD
+
+
+!! Gray
+
+! Light gray
+*.color15:    #E6E6E6
+
+! Medium gray
+*.color7:     #BFBFBF
+
+! Dark gray	
+*.color8:     #4D4D4D

@@ -1,0 +1,49 @@
+# alacritty config, https://github.com/abhaykeerthy12/dotfiles
+
+# Set $TERM env var
+env:
+   TERM: alacritty
+
+# Set window styles
+window:
+   padding:
+    x: 5
+    y: 5
+
+# Font configuration
+font:
+  # Fonts fo different types     
+  normal:
+    family: Fira Mono 
+    style: Medium
+
+  bold:
+    family: Fira Mono
+    style: Bold
+
+  italic:
+    family: Fira Mono
+    style: Italic
+
+  bold_italic:
+    family: Fira Mono
+    style: Bold Italic
+
+  # Font size   
+  size: 12.0
+
+# Colors
+colors:
+  primary:
+    background: '#282A36'
+    foreground: '#E6E6E6'
+
+# Background opacity
+background_opacity: 0.9
+
+# Use clipboard for copying
+selection:
+  save_to_clipboard: true
+
+# Live config reload
+live_config_reload: true
