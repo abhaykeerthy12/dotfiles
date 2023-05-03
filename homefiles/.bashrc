@@ -8,3 +8,6 @@
 alias ls='ls -al --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
+
+# Set Path
+export PATH=~/.local/bin:$PATH

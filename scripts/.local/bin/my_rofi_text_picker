@@ -1,0 +1,9 @@
+#!/bin/env bash
+
+
+chosen=$(printf " Github Token\n"| rofi -dmenu -i -theme-str '@import "text_picker.rasi"')
+
+case $chosen in
+	" Github Token") cat ~/.git_token | xclip -selection c ;;
+	*) exit 1 ;;
+esac
